@@ -1,3 +1,2 @@
-# SarForum
-Саратовский экономический форум /
+# Саратовский экономический форум /
 https://webdev-yaroslav.github.io/SarForum/
