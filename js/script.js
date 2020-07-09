@@ -28,7 +28,7 @@ const slider = document.querySelector('.swiper-container');
 
 let SpeakerSlider = new Swiper(slider, {
     slidesPerView: 4,
-    spaceBetween: 10,
+    spaceBetween: 5,
     navigation: {
         nextEl: '.swiper-button-next-speaker',
         prevEl: '.swiper-button-prev-speaker',
