@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Саратовский экономический форум</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/swiper/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logo-icons/logo.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font/stylesheet.css">
 </head>
 <body>
   <header class="header">
@@ -26,7 +27,7 @@
           <a href="#" class="header-link">Программа</a>
           <a href="#" class="header-link">Мнения</a>
           <a href="#" class="header-link">Медиа</a>
-          <a href="#" class="header-link-last">Партнёры</a>
+          <a href="#" class="header-link">Партнёры</a>
         </div>
         <div class="header-nav-lang">
           <a href="#" class="header-link-lang">en</a>
@@ -86,14 +87,14 @@
       <img src="img/logo-icons/vector.png" alt="vector" class="main-page-vector">
     </div>
     <div class="about">
-      <div class="container">
+      <h1 class="about-title">О форуме</h1>
+      <div class="about-content-block">
         <div class="about-content">
-          <h1 class="about-title">О форуме</h1>
-          <p class="about-text">26–27 сентября 2019 года в Саратове состоится<br>II ежегодный Саратовский экономический форум<br>«Движение только вперёд!».</p>
+          <p class="about-text">26–27 сентября 2019 года в Саратове состоится II ежегодный Саратовский экономический форум «Движение только вперёд!».</p>
           <div class="about-block">
             <div class="about-left-block">
               <div class="about-story">
-                <p class="about-story-text"><span class="text-b">В</span> 2018 году участниками Форума стали инвесторы, <br> собственники и руководители предприятий, <br> предприниматели, а также федеральные парламентарии, <br> представители федеральных органов исполнительной <br> власти, институтов развития, научного сообщества, <br> всероссийских общественных объединений бизнеса.</p>
+                <p class="about-story-text"><span class="text-b">В</span> 2018 году участниками Форума стали инвесторы, собственники и руководители предприятий, предприниматели, а также федеральные парламентарии, представители федеральных органов исполнительной власти, институтов развития, научного сообщества, всероссийских общественных объединений бизнеса.</p>
               </div>
                 <div class="first-forum">
                   <div class="first-forum-block">
@@ -102,7 +103,7 @@
                     </div>
                     <div class="overlay js-overlay-about">
                       <div class="popup js-popup-about">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/d7aJ7JQp8ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="570" height="315" src="https://www.youtube.com/embed/d7aJ7JQp8ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div class="close-popup js-close-about"></div>
                       </div>
                     </div>
@@ -110,8 +111,8 @@
                     <span class="first-forum-subtext">Как это было</span>
                   </div>
                 </div>
-              <p class="left-block-text">Форум посетили: председатель Госдумы РФ — <br> Вячеслав Володин и первый заместитель председателя <br> Правительства РФ — Игорь Шувалов.</p>
-              <p class="left-block-subtext">В 2019 году темой пленарного заседания Форума станет <br> развитие транспорта и логистики. Тематические площадки <br> пройдут по направлениям малого и среднего бизнеса, <br> цифровизации, сельского хозяйства, инвестиций, <br> промышленности, туризма и экспорта.</p>
+              <p class="left-block-text">Форум посетили: председатель Госдумы РФ — <br> Вячеслав Володин и первый заместитель председателя Правительства РФ — Игорь Шувалов.</p>
+              <p class="left-block-subtext">В 2019 году темой пленарного заседания Форума станет развитие транспорта и логистики. Тематические площадки пройдут по направлениям малого и среднего бизнеса, цифровизации, сельского хозяйства, инвестиций, промышленности, туризма и экспорта.</p>
             </div>
             <div class="about-right-block">
               <div class="last-event">
@@ -122,22 +123,43 @@
                   <img src="img/logo-icons/video-icon.png" alt="video-icon" class="video-icon">
                 </div>
               </div>
-              <div class="about-gallery">
-                <div class="card-up">
-                  <a data-fancybox="gallery" href="img/about-cards/card-1.png"><img src="img/about-cards/card-1.png" alt="card-1" class="card-1"></a>
-                  <a data-fancybox="gallery" href="img/about-cards/card-2.png"><img src="img/about-cards/card-2.png" alt="card-2" class="card-2"></a>
-                </div>
-                <div class="card-down">
-                  <a data-fancybox="gallery" href="img/about-cards/card-3.png"><img src="img/about-cards/card-3.png" alt="card-3" class="card-3"></a>
-                  <div class="card-4">
-                    <span class="card-4-text">еще 20 фото</span>
+              <div class="gallery">
+                <div class="gallery-block">
+                  <div class="gallery-block-left">
+                    <div class="card-1">
+                      <a data-fancybox="gallery" href="img/gallery/card-1.png" class="card-img"><img src="img/gallery/card-1.png" alt="card-1"></a>
+                    </div>
+                    <div class="card-2">
+                      <a data-fancybox="gallery" href="img/gallery/card-2.png" class="card-img"><img src="img/gallery/card-2.png" alt="card-2"></a>
+                    </div>
+                  </div>
+                  <div class="gallery-block-right">
+                    <div class="card-3">
+                      <a data-fancybox="gallery" href="img/gallery/card-3.png" class="card-img"><img src="img/gallery/card-3.png" alt="card-3"></a>
+                    </div>
+                    <div class="card-4">
+                      <img src="img/gallery/card-4.png" alt="card-4">
+                      <span class="card-text">еще 20 фото</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="about-event">
-                <div class="about-event-block">
-                  <span class="about-event-text">Форум соберет <br> более 600 экспертов <br> из нескольких стран</span>
+              <div class="swiper-container about">
+                <div class="swiper-wrapper about">
+                  <div class="swiper-slide about">
+                    <img src="img/backgrounds/abou-event-bg.png" alt="">
+                    <span class="about-event-text">Форум соберет <br> более 600 экспертов <br> из нескольких стран</span>
+                  </div>
+                  <div class="swiper-slide about">
+                    <img src="img/backgrounds/abou-event-bg.png" alt="">
+                    <span class="about-event-text">Форум соберет <br> более 600 экспертов <br> из нескольких стран</span>
+                  </div>
+                  <div class="swiper-slide about">
+                    <img src="img/backgrounds/abou-event-bg.png" alt="">
+                    <span class="about-event-text">Форум соберет <br> более 600 экспертов <br> из нескольких стран</span>
+                  </div>
                 </div>
+                <div class="swiper-scrollbar"></div>
               </div>
             </div>
           </div>
@@ -160,7 +182,11 @@
           </div>
           <div class="timetable">
             <div class="timetable-registration">
-              <div class="timetable-registration-block">
+              <div class="timeline">
+                <div class="line" style="width: 20%; left: 0%;"></div>
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+              </div>
+              <div class="timetable-column-block">
                 <div class="timetable-time">10.00 – 11.00</div>
                 <div class="timetable-text-block">
                   <div class="timetable-text">Регистрация участников форума 1-й день</div>
@@ -169,6 +195,9 @@
               </div>
             </div>
             <div class="timetable-column">
+              <div class="timeline">
+                <div class="line" style="width: 100%; left: 0%;"></div>
+              </div>
               <div class="timetable-column-block">
                 <div class="timetable-time">10.00 – 17.00</div>
                 <div class="timetable-text-block">
@@ -178,6 +207,11 @@
               </div>
             </div>
             <div class="timetable-column">
+              <div class="timeline" style="left: 20%;">
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+                <div class="line" style="width: 10%;"></div>
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+              </div>
               <div class="timetable-column-block">
                 <div class="timetable-time">11.00 – 11.30</div>
                 <div class="timetable-text-block">
@@ -187,6 +221,11 @@
               </div>
             </div>
             <div class="timetable-column">
+              <div class="timeline" style="left: 30%;">
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+                <div class="line" style="width: 10%;"></div>
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+              </div>
               <div class="timetable-column-block">
                 <div class="timetable-time">11.30 – 12.00</div>
                 <div class="timetable-text-block">
@@ -196,7 +235,12 @@
               </div>
             </div>
             <div class="timetable-plan">
-              <div class="timetable-plan-block">
+              <div class="timeline" style="left: 40%;">
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+                <div class="line" style="width: 20%;"></div>
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+              </div>
+              <div class="timetable-column-block">
                 <div class="timetable-time">12.00 – 14.00</div>
                 <div class="timetable-text-plan">
                   <div class="timetable-text">Пленарное заседание «Развитие транспортной инфраструктуры – локомотив инвестиционного роста»</div>
@@ -216,6 +260,11 @@
               </div>
             </div>
             <div class="timetable-column">
+              <div class="timeline" style="left: 60%;">
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+                <div class="line" style="width: 10%;"></div>
+                <img src="img/logo-icons/time-round.png" alt="time-round">
+              </div>
               <div class="timetable-column-block">
                 <div class="timetable-time">14.00 – 14.30</div>
                 <div class="timetable-text-block">
@@ -279,80 +328,98 @@
         <div class="speakers-block">
           <h1 class="speakers-title">Спикеры</h1>
           <div class="speakers-slider">
-            <div class="swiper-button-prev-speaker"><img src="img/arrows/arrow-left-gray.png" alt=""></div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide speaker-1">
+            <div class="swiper-button-prev-speaker">
+              <a href="#">
+                <svg class="arrow-blue" width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7138 0.755704L0.735388 17.1756C-0.245129 18.1832 -0.245129 19.8168 0.735388 20.8244L16.7138 37.2443C17.6944 38.2519 19.2841 38.2519 20.2646 37.2443C21.2451 36.2367 21.2451 34.603 20.2646 33.5954L6.27692 19L20.2646 4.40456C21.2451 3.39696 21.2451 1.76331 20.2646 0.755704C19.2841 -0.251901 17.6944 -0.251901 16.7138 0.755704Z" fill="#3B3B48" fill-opacity="0.3"/>
+                </svg>  
+              </a>
+            </div>
+            <div class="swiper-container speakers">
+              <div class="swiper-wrapper speakers">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-1.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Ойкин Вадим <br> Геннадьевич</div>
-                      <div class="slide-text-description">Первый заместитель <br> Председателя <br> Правительства <br> Саратовской области</div>
+                      <div class="slide-text-name">Ойкин Вадим Геннадьевич</div>
+                      <div class="slide-text-description">Первый заместитель Председателя <br> Правительства <br> Саратовской области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-2">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-2.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Швакова Юлия <br> Александровна</div>
-                      <div class="slide-text-description">Министр экономического <br> развития Саратовской <br> области</div>
+                      <div class="slide-text-name">Швакова Юлия Александровна</div>
+                      <div class="slide-text-description">Министр экономического развития Саратовской <br> области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-3">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-3.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Антонов Алексей <br> Васильевич</div>
-                      <div class="slide-text-description">Президент Союза <br> Торгово-промышленной <br> палаты Саратовской <br> области</div>
+                      <div class="slide-text-name">Антонов Алексей Васильевич</div>
+                      <div class="slide-text-description">Президент Союза <br> Торгово-промышленной палаты Саратовской <br> области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-4">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-4.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Радаев Валерий <br> Васильевич</div>
-                      <div class="slide-text-description">Губернатор Саратовской <br> области</div>
+                      <div class="slide-text-name">Радаев Валерий Васильевич</div>
+                      <div class="slide-text-description">Губернатор Саратовской области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-1">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-1.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Ойкин Вадим <br> Геннадьевич</div>
-                      <div class="slide-text-description">Первый заместитель <br> Председателя <br> Правительства <br> Саратовской области</div>
+                      <div class="slide-text-name">Ойкин Вадим Геннадьевич</div>
+                      <div class="slide-text-description">Первый заместитель Председателя <br> Правительства <br> Саратовской области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-2">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-2.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Швакова Юлия <br> Александровна</div>
-                      <div class="slide-text-description">Министр экономического <br> развития Саратовской <br> области</div>
+                      <div class="slide-text-name">Швакова Юлия Александровна</div>
+                      <div class="slide-text-description">Министр экономического развития Саратовской <br> области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-3">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-3.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Антонов Алексей <br> Васильевич</div>
-                      <div class="slide-text-description">Президент Союза <br> Торгово-промышленной <br> палаты Саратовской <br> области</div>
+                      <div class="slide-text-name">Антонов Алексей Васильевич</div>
+                      <div class="slide-text-description">Президент Союза <br> Торгово-промышленной палаты Саратовской <br> области</div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide speaker-4">
+                <div class="swiper-slide speaker">
+                  <img src="img/speakers/speaker-4.png" alt="">
                   <div class="slide-text-bg">
                     <div class="swiper-slide-text">
-                      <div class="slide-text-name">Радаев Валерий <br> Васильевич</div>
-                      <div class="slide-text-description">Губернатор Саратовской <br> области</div>
+                      <div class="slide-text-name">Радаев Валерий Васильевич</div>
+                      <div class="slide-text-description">Губернатор Саратовской области</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next-speaker"><img class="arrow-right-img" src="img/arrows/arrow-left-gray.png" alt="arrow-left-gray"></div>
+            <div class="swiper-button-next-speaker">
+              <svg class="arrow-blue" width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.28616 0.755704L20.2646 17.1756C21.2451 18.1832 21.2451 19.8168 20.2646 20.8244L4.28616 37.2443C3.30564 38.2519 1.7159 38.2519 0.735388 37.2443C-0.245129 36.2367 -0.245129 34.603 0.735388 33.5954L14.7231 19L0.735388 4.40456C-0.245129 3.39696 -0.245129 1.76331 0.735388 0.755704C1.7159 -0.251901 3.30564 -0.251901 4.28616 0.755704Z" fill="#3B3B48" fill-opacity="0.3"/>
+              </svg>                
+            </div>
           </div>
         </div>
       </div>
-      <img src="img/logo-icons/vector-dark.png" alt="speakers-vector" class="vector">
+      <img src="img/logo-icons/vector-dark.png" alt="speakers-vector" class="speakers-vector">
     </div>
     <div class="media">
       <div class="container">
@@ -412,8 +479,16 @@
               </div>
             </div>
             <div class="media-buttons">
-              <div class="swiper-button-prev-media"><img src="img/arrows/arrow-whitegray.png" alt="arrow-whitegray"></div>
-              <div class="swiper-button-next-media"><img class="arrow-whitegray-right" src="img/arrows/arrow-whitegray.png" alt="arrow-whitegray-right"></div>
+              <div class="swiper-button-prev-media">
+                <svg class="arrow-white" width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16.7138 0.755704L0.735388 17.1756C-0.245129 18.1832 -0.245129 19.8168 0.735388 20.8244L16.7138 37.2443C17.6944 38.2519 19.2841 38.2519 20.2646 37.2443C21.2451 36.2367 21.2451 34.603 20.2646 33.5954L6.27692 19L20.2646 4.40456C21.2451 3.39696 21.2451 1.76331 20.2646 0.755704C19.2841 -0.251901 17.6944 -0.251901 16.7138 0.755704Z" fill="#E8F0FF" fill-opacity="0.3"/>
+                </svg>                   
+              </div>
+              <div class="swiper-button-next-media">
+                <svg class="arrow-white" width="21" height="38" viewBox="0 0 21 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.28616 0.755704L20.2646 17.1756C21.2451 18.1832 21.2451 19.8168 20.2646 20.8244L4.28616 37.2443C3.30564 38.2519 1.7159 38.2519 0.735388 37.2443C-0.245129 36.2367 -0.245129 34.603 0.735388 33.5954L14.7231 19L0.735388 4.40456C-0.245129 3.39696 -0.245129 1.76331 0.735388 0.755704C1.7159 -0.251901 3.30564 -0.251901 4.28616 0.755704Z" fill="#E8F0FF" fill-opacity="0.3"/>
+                </svg>                  
+              </div>
             </div>
           </div>
         </div>
@@ -553,7 +628,7 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/swiper/swiper.min.js"></script>
   <script src="js/jquery/jquery-3.5.1.min.js"></script>
 
   <link rel="stylesheet" href="css/fancybox/jquery.fancybox.min.css">

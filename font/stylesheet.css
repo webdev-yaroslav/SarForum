@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Petersburg';
+    src: url('Petersburg-Bold.eot');
+    src: local('Petersburg Bold'), local('Petersburg-Bold'),
+        url('Petersburg-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Petersburg-Bold.woff2') format('woff2'),
+        url('Petersburg-Bold.woff') format('woff'),
+        url('Petersburg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Petersburg';
+    src: url('Petersburg-BoldItalic.eot');
+    src: local('Petersburg Bold Italic'), local('Petersburg-BoldItalic'),
+        url('Petersburg-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Petersburg-BoldItalic.woff2') format('woff2'),
+        url('Petersburg-BoldItalic.woff') format('woff'),
+        url('Petersburg-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Petersburg';
+    src: url('Petersburg-Regular.eot');
+    src: local('Petersburg Regular'), local('Petersburg-Regular'),
+        url('Petersburg-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Petersburg-Regular.woff2') format('woff2'),
+        url('Petersburg-Regular.woff') format('woff'),
+        url('Petersburg-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Petersburg';
+    src: url('Petersburg-Italic.eot');
+    src: local('Petersburg Italic'), local('Petersburg-Italic'),
+        url('Petersburg-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Petersburg-Italic.woff2') format('woff2'),
+        url('Petersburg-Italic.woff') format('woff'),
+        url('Petersburg-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

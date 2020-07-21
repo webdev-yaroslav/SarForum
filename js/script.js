@@ -24,11 +24,12 @@ $(document).mouseup(function (e) {
 
 // Слайдер спикеров
 
-const slider = document.querySelector('.swiper-container');
+const slider1 = document.querySelector('.swiper-container.speakers');
 
-let SpeakerSlider = new Swiper(slider, {
+let SpeakerSlider = new Swiper(slider1, {
     slidesPerView: 4,
-    spaceBetween: 5,
+    spaceBetween: 10,
+    grabCursor: true,
     navigation: {
         nextEl: '.swiper-button-next-speaker',
         prevEl: '.swiper-button-prev-speaker',
@@ -41,9 +42,23 @@ const slider2 = document.querySelector('.swiper-container.media');
 
 let MediaSlider = new Swiper(slider2, {
     slidesPerView: 2,
-    spaceBetween: 50,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next-media',
         prevEl: '.swiper-button-prev-media',
+    },
+})
+
+// Слайдер о форуме
+
+const slider3 = document.querySelector('.swiper-container.about')
+
+let AboutSlider = new Swiper(slider3, {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    grabCursor: true,
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
     },
 })

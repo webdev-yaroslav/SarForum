@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
     padding: 0; 
+    -webkit-font-smoothing: antialiased;
     background-color: #E5E5E5;
 }
 .header {
@@ -46,6 +47,7 @@ body {
 .header-nav {
     margin-left: auto;
 }
+/* border: 2px solid #008FED; */
 .header-link {
     font-style: normal;
     font-weight: 600;
@@ -53,14 +55,15 @@ body {
     line-height: 30px;
     color: white;
     text-decoration: none;
-    padding-right: 35px;
+    margin-right: 35px;
 }
 .header-link:hover {
     color: #2095F1;
     transition-delay: 0.1s;
     transition: .4s ease-out;
+    border-bottom: 2px solid #008FED;
 }
-.header-link-last {
+.header-link:last-child {
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -68,10 +71,11 @@ body {
     color: white;
     text-decoration: none;
 }
-.header-link-last:hover {
+.header-link:last-child:hover {
     color: #2095F1;
     transition-delay: 0.1s;
     transition: .4s ease-out;
+    border-bottom: 2px solid #008FED;
 }
 .header-link-lang {
     font-style: normal;
@@ -80,12 +84,13 @@ body {
     line-height: 30px;
     color: white;
     text-decoration: none;
-    margin-left: 155px;
+    margin-left: 125px;
 }
 .header-link-lang:hover {
     color: #2095F1;
     transition-delay: 0.1s;
     transition: .4s ease-out;
+    border-bottom: 2px solid #008FED;
 }
 .page-main {
     background: url(../img/backgrounds/header-background.png);
@@ -108,7 +113,7 @@ body {
     line-height: 72px;
 }
 .main-title-qoute {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 16px;
     line-height: 12px;  
@@ -162,7 +167,7 @@ body {
     padding-top: 21px;
 }
 .date-opening-text {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 16px;
     line-height: 3px;
@@ -197,7 +202,7 @@ body {
     padding: 2px 15px;
 }
 .open-day-text {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 16px;
     line-height: 3px;
@@ -222,29 +227,37 @@ body {
     background: #2095F1;
     border: none;
     padding: 10px 23px;
+    cursor: pointer;
 }
 .main-page-button:hover {
-    color: #2095F1;
-    background: white;
+    background: #F03939;
     transition-delay: 0.1s;
     transition: .4s ease-out;
 }
 .main-page-vector {
     position: relative;
-    top: 76px; 
+    top: 70px; 
     display: block;
     margin: auto;
 }
+
+/* О форуме */
 .about {
-    background: #E5EEFF;
     max-width: 1366px;
     margin: auto;
+    padding-top: 1px;
+    background: #E5EEFF;
+}
+.about-content-block {
+    display: flex;
 }
 .about-content {
-    padding-top: 47px;
     padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: 98px;
 }
 .about-title {
+    padding-top: 27px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -253,29 +266,30 @@ body {
     color: #008FED;
 }
 .about-text {
-    font-family: Century Schoolbook;
+    max-width: 800px;
+    margin-top: 47px;
+    font-family: Petersburg;
     font-size: 36px;
     line-height: 45px;
-    color: #354459;
     font-style: italic;
-    margin-top: 57px;
+    color: #354459;
 }
 .text-b {
-    font-family: Century Schoolbook;
+    font-family: Roboto;
     font-size: 48px;
     line-height: 30px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     font-style: italic;
     background: #008FED;
-    padding: 9px 9px 0px 12px;
+    padding: 9px 9px 1px 12px;
 }
 .about-story {
     display: flex;
     align-items: center;
-    padding-right: 100px;
 }
 .about-story-text {
+    max-width: 500px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -287,13 +301,20 @@ body {
     margin-top: 47px;
 }
 .first-forum {
+    width: 570px;
+    height: 326px;
     margin-top: 41px;
     background: url(../img/backgrounds/first-forum-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .first-forum-block {
+    position: relative;
+    width: 525px;
+    height: 326px;
     background: url(../img/backgrounds/rectangle-bg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 40px;
     padding-top: 43px;
     padding-bottom: 79px;
@@ -302,6 +323,7 @@ body {
     background-color: white;
     border-radius: 50%;
     border: none;
+    cursor: pointer
 }
 .play-icon {
     position: relative;
@@ -317,14 +339,15 @@ body {
     color: #FFFFFF;
 }
 .first-forum-subtext {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 18px;
     line-height: 12px;
     color: #FFFFFF;
 }
 .left-block-text {
-    margin-top: 37px;
+    max-width: 500px;
+    margin-top: 60px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -332,6 +355,7 @@ body {
     color: #354459;
 }
 .left-block-subtext {
+    max-width: 500px;
     margin-top: 27px;
     font-style: normal;
     font-weight: normal;
@@ -340,14 +364,16 @@ body {
     color: #354459;
 }
 .about-right-block {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 .last-event-icon {
     margin-top: 45px;
     margin-left: 74px;
 }
 .last-event {
+    width: 470px;
     background: url(../img/backgrounds/last-event-bg.png);
+    background-size: cover;
     display: flex;
 }
 .last-event-block {
@@ -356,48 +382,78 @@ body {
     padding-bottom: 32px;
 }
 .last-event-text {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 36px;
     line-height: 45px;
     color: #354459;
 }
-.about-gallery {
+
+/* Галлерея */
+.gallery-block {
+    display: flex;
     margin-top: 46px;
 }
-.card-down {
-    display: flex;
-    margin-top: 30px;
+.gallery-block-right {
+    margin-left: 27px;
 }
 .card-2 {
-    margin-left: 32px;
+    margin-top: 27px;
 }
 .card-4 {
-    background: url(../img/about-cards/card-4.png);
-    background-repeat: no-repeat;
-    padding-left: 30px;
-    padding-top: 105px;
-    padding-right: 78px;
-    margin-left: 35px;
+    position: relative;
+    margin-top: 27px;
 }
-.card-4-text {
-    font-family: Century Schoolbook;
-    font-style: italic; 
+.card-text {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    font-family: Petersburg;
+    font-style: italic;
     font-size: 18px;
     line-height: 13px;
     color: #FFFFFF;
 }
-.about-event {
-    background: url(../img/backgrounds/abou-event-bg.png);
+.card-img {
+    display: block;
+    position: relative;
+}
+.card-img::before {
+    position: absolute;
+    content: "";
+    background: -webkit-gradient(linear,left bottom,left top,from(rgba(53,68,89,.5)),to(rgba(53,68,89,.5)));
+    background: linear-gradient(0deg,rgba(53,68,89,.5),rgba(53,68,89,.5));
+    width: 100%;
+    height: 97%;
+    opacity: 0;
+    visibility: hidden;
+}
+.card-img:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.1s;
+    transition: .4s ease-out;
+}
+
+/* Слайдер о ивенте */
+.swiper-container.about {
+    width: 470px;
     margin-top: 60px;
 }
-.about-event-block {
-    padding-top: 53px;
-    padding-left: 58px;
-    padding-bottom: 38px;
+.swiper-slide.about {
+    position: relative;
 }
 .about-event-text {
-    font-family: Century Schoolbook;
+    padding-left: 58px;
+    padding-bottom: 58px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 36px;
     line-height: 48px;
@@ -432,7 +488,7 @@ body {
     display: flex;
 }
 .date-button {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 18px;
     line-height: 22px;
@@ -440,16 +496,10 @@ body {
     background: #E8F0FF;
     padding: 10px 30px;
     border: none;
-}
-.date-button:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
-    color: #ffffff;
-    transition-delay: 0.1s;
-    transition: .4s ease-out;
-    background: #008FED;
+    cursor: pointer
 }
 .date-button-blue {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 18px;
     line-height: 22px;
@@ -457,20 +507,21 @@ body {
     background: #008FED;
     padding: 10px 30px;
     border: none;
+    cursor: pointer
 }
 .date-button-blue:hover {
-    box-shadow: inset 0 0 0 3px #008FED;
     transition-delay: 0.1s;
     transition: .4s ease-out;
     color: rgba(7, 11, 33, 0.4);
-    background: #ffffff;
+    color: #FFFFFF;
+    background: #0072BC;
 }
 .download-block {
     display: flex;
     align-items: center;
 }
 .download-button {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     border: none;
     font-style: italic;
     font-size: 18px;
@@ -478,6 +529,7 @@ body {
     color: #FFFFFF;
     background: #F03939;
     padding: 10px 10px;
+    cursor: pointer
 }
 .download-button:hover {
     box-shadow: inset 0 0 0 3px #ffffff;
@@ -485,7 +537,7 @@ body {
     transition: .4s ease-out;
 }
 .download-pdf {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     font-style: italic;
     font-size: 18px;
     line-height: 30px;
@@ -496,10 +548,24 @@ body {
 .timetable {
     margin-top: 44px;
 }
+
+
+.timeline {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.line {
+    position: relative;
+    border-top: 2px solid white;
+    border-radius: 1px;
+}
+
+
 .timetable-registration {
     background: #3D5272;
 }
-.timetable-registration-block {
+.timetable-column-block {
     padding: 40px 40px;
 }
 .timetable-time {
@@ -523,7 +589,7 @@ body {
 }
 .timetable-place {
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 14px;
     color: #FFFFFF;
@@ -532,15 +598,9 @@ body {
     margin-top: 5px;
     background: #3D5272;
 }
-.timetable-column-block {
-    padding: 40px 40px;
-}
 .timetable-plan {
     margin-top: 5px;
     background: #3D5272;
-}
-.timetable-plan-block {
-    padding: 40px 40px;
 }
 .timetable-text-plan {
     margin-top: 15px;
@@ -618,12 +678,12 @@ body {
     background: #008FED;
     border: none;
     padding: 5px 20px;
+    cursor: pointer
 }
 .playground-info-button:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
     transition-delay: 0.1s;
     transition: .4s ease-out;
-    background: #008FED;
+    background: #F03939;
 }
 .playground-text {
     font-style: normal;
@@ -650,12 +710,12 @@ body {
     font-size: 14px;
     line-height: 30px;
     color: #FFFFFF;
-    background: #F03939;
+    background: #008FED;
     border: none;
     padding: 5px 30px;
+    cursor: pointer
 }
 .program-button:hover {
-    box-shadow: inset 0 0 0 3px #ffffff;
     transition-delay: 0.1s;
     transition: .4s ease-out;
     background: #F03939;
@@ -672,8 +732,7 @@ body {
     margin: auto;
 }
 .speakers-block {
-    padding-top: 43px;
-    padding-bottom: 80px;
+    padding-top: 23px;
 }
 .speakers-title {
     font-style: normal;
@@ -683,41 +742,35 @@ body {
     text-align: center;
     color: #008FED;
 }
+.speakers-vector {
+    display: block;
+    margin: auto;
+}
 
 /* Speakers-slider */
 .speakers-slider {
-    margin-top: 45px;
     display: flex;
     align-items: center;
+    margin-top: 45px;
 }
-.swiper-container {
+.speakers-slider-bg {
+    background: url(../img/logo-icons/vector-dark.png);
+}
+.swiper-container.speakers {
     width: 1256px;
 }
-.swiper-slide.speaker-1 {
+.swiper-slide.speaker {
+    position: relative;
     width: 270px;
-    background: url(../img/speakers/speaker-1.png);
-    background-repeat: no-repeat;
-}
-.swiper-slide.speaker-2 {
-    width: 270px;
-    background: url(../img/speakers/speaker-2.png);
-    background-repeat: no-repeat;
-}
-.swiper-slide.speaker-3 {
-    width: 270px;
-    background: url(../img/speakers/speaker-3.png);
-    background-repeat: no-repeat;
-}
-.swiper-slide.speaker-4 {
-    width: 270px;
-    background: url(../img/speakers/speaker-4.png);
-    background-repeat: no-repeat;
 }
 .slide-text-bg {
-    margin-top: 168px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    top: 168px;
     background: linear-gradient(180deg, rgba(12, 17, 41, 0) 0%, #0C1129 100%);
     height: 219px;
-    width: 267px;
+    width: 270px;
     background-repeat: no-repeat;
 }
 .swiper-slide-text {
@@ -741,14 +794,25 @@ body {
     color: #FFFFFF;
     margin-top: 8px;
 }
-.arrow-right-img {
-    transform: scale(-1, 1);
-}
 .swiper-button-next-speaker {
+    cursor: pointer;
     margin-left: 15px;
 }
 .swiper-button-prev-speaker {
+    cursor: pointer;
     margin-right: 15px;
+}
+.arrow-blue path:hover {
+    fill: #008FED;
+    fill-opacity: 1;
+    transition-delay: 0.2s;
+    transition: .3s ease-out;
+}
+.arrow-white path:hover {
+    fill: white;
+    fill-opacity: 1;
+    transition-delay: 0.2s;
+    transition: .3s ease-out;
 }
 
 /* Media */
@@ -770,14 +834,14 @@ body {
     text-align: center;
 }
 .media-slider {
-    margin-top: 50px;
+    margin-top: 62px;
 }
 .media-slide-top {
     display: flex;
 }
 .media-slide-down {
     display: flex;
-    margin-top: 50px;
+    margin-top: 55px;
 }
 .media-text-slide {
     font-style: normal;
@@ -800,12 +864,17 @@ body {
 .arrow-whitegray-right {
     transform: scale(-1, 1);
 }
+.swiper-button-prev-media {
+    cursor: pointer;
+}
 .swiper-button-next-media {
     margin-left: 30px;
+    cursor: pointer;
 }
 .media-buttons {
     display: flex;
     justify-content: center;
+    margin-top: 60px;
 }
 
 /* Партнёры */
@@ -871,7 +940,7 @@ body {
     color: #354459;
 }
 .brand-subname {
-    font-family: Century Schoolbook;
+    font-family: Petersburg;
     margin-top: 16px;
     font-style: italic;
     font-size: 16px;
@@ -948,9 +1017,13 @@ body {
     margin: auto;
     background: #354459;
 }
+.place-block {
+    position: relative;
+}
 .place-info {
     position: absolute;
-    top: 716vh;
+    z-index: 1;
+    top: 0;
     background: url(../img/backgrounds/place-map.png);
     width: 440px;
     height: 700px;
@@ -1027,7 +1100,7 @@ body {
 
 /* JS-overlay */
 .overlay {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -1036,19 +1109,26 @@ body {
 }
 .popup {
     position: absolute;
-	width: 650px;
-	left: 40%;
+    width: 570px;
+    height: 100%;
+    top: 0;
+    left: 0;
+	/* left: 40%;
 	top: 50%;
     transform: translate(-50%, -40%);
 	padding: 20px;
 	box-sizing: border-box;
-	background-color: #ffffff;
+	background-color: #ffffff; */
 	color: #fff;
+}
+.popup iframe {
+    width: 100%;
+    height: 100%;
 }
 .close-popup {
     position: absolute;
 	top: 15px;
-	right: 15px;
+	right: 6px;
 	width: 23px;
 	height: 23px;
 	cursor: pointer;
